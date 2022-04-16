@@ -1,16 +1,149 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    @font-face {
+        font-family: Nunito;
+        src: url('/asset/fonts/nunito/extrabold.ttf');
+        font-display: swap;
+    }
+    @font-face {
+        font-family: Chunky;
+        src: url('/asset/fonts/chunky/reguler.otf');
+        font-display: swap;
+    }
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/* Navbar Link */
+.link {
+   @apply hover:opacity-20 duration-300;
 }
 
-* {
-  box-sizing: border-box;
+.link-active {
+    @apply hover:bg-gray-200 hover:text-slate-800 py-4 px-6 w-full cursor-pointer;
+}
+
+/* hamburger */
+.hamburger-line {
+    @apply w-8 h-1 bg-white rounded-md;
+}
+
+.hamburger-active > span:nth-child(1) {
+    @apply rotate-45 transition;
+}
+
+/* End Navbar Link*/
+
+
+/* Hero */
+.content-hero {
+    @apply 
+    px-10 text-center
+    md:text-left md:px-40 
+    pt-[30px] md:pt-[350px] 
+    font-nunito capitalize  
+    w-[100%] md:w-[70%]
+}
+
+/* End Hero*/
+
+/* Content */
+
+.title-promotion {
+    @apply 
+    font-chunky 
+    mt-10 
+    text-right md:text-left
+}
+
+.subtitle-promotion {
+    @apply 
+    font-chunky 
+    mt-5 
+    text-4xl 
+    text-right md:text-left
+}
+
+/* Kumpulan Box */
+.collect-box {
+    @apply 
+    mt-10 
+    items-center text-center
+    grid-cols-1 md:grid-cols-1 lg:grid-cols-3 md:flex
+    space-y-10 md:space-x-10
+}
+
+.box {
+    @apply 
+    w-auto h-[250px]
+    px-5 py-10 md:px-6 md:py-10 
+    rounded-xl 
+    duration-300
+    shadow-red-50 hover:shadow-[0_15px_45px]
+    hover:scale-105
+    text-center items-center
+    bg-slate-700
+}
+
+.box-title {
+    @apply 
+    mb-5 w-40
+    font-nunito
+    text-xl 
+    font-bold
+}
+
+.box-content {
+    @apply
+    text-xl 
+    font-thin
+
+}
+
+.instagram-button {
+    @apply 
+    w-1/2 lg:w-1/5
+    p-5 
+    text-white font-bold 
+    duration-200
+    hover:scale-125
+    rounded-xl
+    bg-pink-500 hover:bg-pink-700 
+    right-24 md:right-[300px]
+    absolute
+}
+
+
+/*                                          ROADMAP         */
+.group-date {
+    @apply 
+    mb-14
+    text-4xl md:text-7xl text-gray-200
+    font-chunky
+    px-3 py-4 
+    font-bold tracking-widest
+}
+
+.timeline {
+    @apply 
+    border-l-4 border-gray-200
+    font-nunito 
+    text-xl
+    ml-3 py-16 pl-16
+    space-y-14
+}
+
+.dot {
+    @apply 
+    absolute -top-5 -left-[80px]
+    bg-blue-400
+    h-6 w-6 
+    rounded-full
+    border-4 border-main
+}
+
+.timeline-title {
+    @apply 
+    text-2xl font-bold opacity-40
 }
