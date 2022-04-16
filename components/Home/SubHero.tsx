@@ -8,8 +8,8 @@ export default function SubHero() {
         <div className="content pb-16 fadeIn">
             <h1 className="heading uppercase font-bold text-3xl mb-5 md:mb-0 md:text-5xl fadeIn" data-aos="fade-in" >community is here !</h1>
             <h1 className='subheading capitalize font-thin text-sm md:text-md pb-10 fadeIn' data-aos="fade" data-aos-duration="3000" >thanks for you to visit this community round! join our discord server to update regarding the the product </h1>
-              <Link href={'https://discord.gg/hdWKymgq'}>
-                  <a href='https://discord.gg/hdWKymgq' className="px-5 py-3 mt-20 border-4 hover:shadow-[0_5px_45px_white]" data-aos="fade-up" data-aos-duration="3000">Join Discord</a>
+              <Link href={'https://discord.gg/k3p9TqCEFx'}>
+                  <a href='https://discord.gg/k3p9TqCEFx' className="px-5 py-3 mt-20 border-4 hover:shadow-[0_5px_45px_white]" data-aos="fade-up" data-aos-duration="3000">Join Discord</a>
               </Link>
         </div>
        
