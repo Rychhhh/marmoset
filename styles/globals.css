@@ -15,7 +15,7 @@
     }
 }
 
-/* 1. Navbar Link */
+                                                    /* 1. Navbar Link */
 .link {
    @apply hover:opacity-20 duration-300;
 }
@@ -32,7 +32,9 @@
 .hamburger-active > span:nth-child(1) {
     @apply rotate-45 transition;
 }
-/* End Navbar Link*/
+                                                      /* End Navbar Link*/
+
+                                                        /* 2. Home Page */
     .home-container {
         @apply 
         h-[3600px] md:h-[1800px] container text-center self-end md:my-20
@@ -58,6 +60,78 @@
         }
         /* End Left Content */
 
+        /* Right Content */
+
+        .title-promotion {
+            @apply 
+            font-chunky 
+            mt-10 
+            text-right md:text-left
+        }
+
+        .subtitle-promotion {
+            @apply 
+            font-chunky 
+            mt-5 
+            text-4xl 
+            text-right md:text-left
+        }
+
+        /* Kumpulan Box */
+        .collect-box {
+            @apply 
+            mt-10 
+            items-center text-center
+            grid-cols-1 md:grid-cols-1 lg:grid-cols-3 md:flex
+            space-y-10 md:space-x-10
+        }
+
+        .box {
+            @apply 
+            w-auto h-[250px]
+            px-5 py-10 md:px-6 md:py-10 
+            rounded-xl 
+            duration-300
+            shadow-red-50 hover:shadow-[0_15px_45px]
+            hover:scale-105
+            text-center items-center
+            bg-slate-700
+        }
+
+        .box-title {
+            @apply 
+            mb-5 w-40
+            font-nunito
+            text-xl 
+            font-bold
+        }
+
+        .box-content {
+            @apply
+            text-xl 
+            font-thin
+
+        }
+
+        .instagram-button {
+            @apply 
+            w-1/2 lg:w-1/5
+            p-5 
+            text-white font-bold 
+            duration-200
+            hover:scale-125
+            rounded-xl
+            bg-pink-500 hover:bg-pink-700 
+            right-24 md:right-[300px]
+            absolute
+        }
+        /* End Kumpulan Box */
+
+
+        /* End Right Content */
+
+
+
     /* Home Product */
     .heading {
         @apply
@@ -78,12 +152,12 @@
     }
     /* End Home Product */
 
-/* 2. Home Page*/
-
-/* End Home Page */
 
 
-/* Hero */
+                                                        /* End Home Page */
+
+
+                                                            /* 3. Hero */
 .content-hero {
     @apply 
     px-10 text-center
@@ -93,73 +167,10 @@
     w-[100%] md:w-[70%]
 }
 
-/* End Hero*/
+                                                            /* End Hero*/
 
-/* Content */
 
-.title-promotion {
-    @apply 
-    font-chunky 
-    mt-10 
-    text-right md:text-left
-}
 
-.subtitle-promotion {
-    @apply 
-    font-chunky 
-    mt-5 
-    text-4xl 
-    text-right md:text-left
-}
-
-/* Kumpulan Box */
-.collect-box {
-    @apply 
-    mt-10 
-    items-center text-center
-    grid-cols-1 md:grid-cols-1 lg:grid-cols-3 md:flex
-    space-y-10 md:space-x-10
-}
-
-.box {
-    @apply 
-    w-auto h-[250px]
-    px-5 py-10 md:px-6 md:py-10 
-    rounded-xl 
-    duration-300
-    shadow-red-50 hover:shadow-[0_15px_45px]
-    hover:scale-105
-    text-center items-center
-    bg-slate-700
-}
-
-.box-title {
-    @apply 
-    mb-5 w-40
-    font-nunito
-    text-xl 
-    font-bold
-}
-
-.box-content {
-    @apply
-    text-xl 
-    font-thin
-
-}
-
-.instagram-button {
-    @apply 
-    w-1/2 lg:w-1/5
-    p-5 
-    text-white font-bold 
-    duration-200
-    hover:scale-125
-    rounded-xl
-    bg-pink-500 hover:bg-pink-700 
-    right-24 md:right-[300px]
-    absolute
-}
 
 
 /*                                          ROADMAP         */
