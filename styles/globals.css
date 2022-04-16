@@ -15,7 +15,7 @@
     }
 }
 
-/* Navbar Link */
+/* 1. Navbar Link */
 .link {
    @apply hover:opacity-20 duration-300;
 }
@@ -32,8 +32,55 @@
 .hamburger-active > span:nth-child(1) {
     @apply rotate-45 transition;
 }
-
 /* End Navbar Link*/
+    .home-container {
+        @apply 
+        h-[3600px] md:h-[1800px] container text-center self-end md:my-20
+    }
+
+    .heading-container {
+        @apply 
+        container mx-[10px] lg:mx-[130px] xl:mx-[350px] text-center relative font-chunky flex justify-center items-center
+    }
+    .text-heading {
+        @apply 
+        relative px-10 pb-10 text-5xl md:text-7xl z-10 flex flex-col
+    }
+
+        /* Left Content */
+        .left-right-content {
+            @apply 
+            justify-between grid grid-cols-1 mx-[10px] my-20 items-center sm:mx-[10px] lg:mx-[400px] sm:grid-cols-1 lg:grid-cols-2
+        }
+        .span-content-left {
+            @apply 
+            absolute right-32 bottom-0 sm:left-0 opacity-50
+        }
+        /* End Left Content */
+
+    /* Home Product */
+    .heading {
+        @apply
+        pt-32 ml-0 sm:ml-40 lg:ml-96
+    }
+    .home-product {
+        @apply 
+        mx-[50px] sm:mx-[150px] lg:mx-[100px] justify-center grid grid-cols-1 gap-20 md:grid-cols-1 lg:grid-cols-3
+    }
+    .image-product {
+        @apply 
+        hover:scale-105 duration-300 xl:mr-5 w-[300px] h-[300px] md:w-[300px] md:h-[300px]
+    }
+
+    .button-product {
+        @apply 
+        font-nunito font-bold py-3 px-5 bg-emerald-500 duration-300 active:scale-105 hover:scale-105 hover:bg-emerald-700
+    }
+    /* End Home Product */
+
+/* 2. Home Page*/
+
+/* End Home Page */
 
 
 /* Hero */

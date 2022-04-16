@@ -17,12 +17,12 @@ const Home: NextPage = () => {
       <Layout className='hi bg-home text-white'>
 
         {/* Page Next Generation of NFT */}
-        <div className='h-[3600px] md:h-[1800px] container text-center self-end md:my-20'> 
+        <div className='home-container'> 
 
           {/* Heading */}
-          <div className="container mx-[10px] lg:mx-[130px] xl:mx-[350px] text-center relative font-chunky flex justify-center items-center"> 
+          <div className="heading-container"> 
            
-            <h1 className='relative px-10 pb-10 text-5xl md:text-7xl z-10 flex flex-col' data-aos-delay="400" >
+            <h1 className='text-heading' data-aos-delay="400" >
               <span className='text-cyan-600' data-aos="zoom-in" >Next Generation</span> 
               <span className='text-yellow-400' data-aos="zoom-in">Of</span>  
               <span className='text-red-500' data-aos="zoom-in">NFT</span>
@@ -32,11 +32,11 @@ const Home: NextPage = () => {
           </div>
           {/* End Heading */}
 
-          <div className="content justify-between grid grid-cols-1 mx-[10px] my-20 items-center sm:mx-[10px] lg:mx-[400px] sm:grid-cols-1 lg:grid-cols-2">
+          <div className="left-right-content">
 
           {/* Left Content */}
           <div className="left relative" data-aos="zoom-in-right"  data-aos-delay="400">
-            <span className='absolute right-30 bottom-0 sm:left-0 opacity-50'>
+            <span className='span-content-left'>
               <svg width={400} height={400} viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                 <path fill="#FF0066" d="M47.2,-80.6C61.6,-73.4,74,-61.7,81.3,-47.5C88.5,-33.3,90.7,-16.6,90.2,-0.3C89.8,16.1,86.7,32.2,78.6,44.9C70.5,57.6,57.2,66.9,43.3,73.8C29.3,80.8,14.7,85.3,-0.3,85.9C-15.3,86.4,-30.7,83.1,-44.7,76.2C-58.8,69.4,-71.5,59,-78.8,45.7C-86.1,32.4,-87.9,16.2,-86.6,0.7C-85.4,-14.8,-81.2,-29.6,-74.2,-43.3C-67.1,-57,-57.3,-69.6,-44.5,-77.6C-31.6,-85.6,-15.8,-89.1,0.3,-89.6C16.4,-90.1,32.8,-87.7,47.2,-80.6Z" transform="translate(100 100)" />
               </svg>
@@ -92,14 +92,14 @@ const Home: NextPage = () => {
                   </h1>
                 </div>
                 
-              <div className='mx-[60px] sm:mx-[150px] lg:mx-[100px] justify-center grid grid-cols-1 gap-20 md:grid-cols-1 lg:grid-cols-3'>
+              <div className='home-product'>
                   {Product.map((img) => (
-                    <div className="image hover:scale-105 duration-300 xl:mr-5 w-[300px] h-[300px] md:w-[300px] md:h-[300px]" key={img.alt}>
+                    <div className="image-product " key={img.alt}>
                     <Image src={img.link} key={img.alt} alt={img.alt} width={320} height={320} data-aos="flip-right" data-aos-delay={img.delay}/>
                     </div>
                   ))}
 
-                  <div className="button font-nunito font-bold py-3 px-5 bg-emerald-500 duration-300 active:scale-105 hover:scale-105 hover:bg-emerald-700" data-aos="zoom-in-up" data-aos-delay="700">
+                  <div className="button-product" data-aos="zoom-in-up" data-aos-delay="700">
                     <Link href={'https://opensea.io/collection/marmosetparty'}>
                       More Project
                     </Link>
@@ -110,11 +110,6 @@ const Home: NextPage = () => {
 
         </div>
         {/* End Page Next Generation of NFT */}
-
-
-        
-        
-
 
       </Layout>
   ) 
