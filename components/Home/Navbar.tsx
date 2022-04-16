@@ -1,27 +1,11 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import React, { useEffect, useRef } from 'react'
+import React from 'react'
 
-import { Power3, TweenMax } from 'gsap'
 import Popup from 'reactjs-popup'
 
 
 export default function Navbar() {
-  let animation = useRef(null)
-
-
-  useEffect(() => {
-     TweenMax.to(
-       animation,
-       .5,
-       {
-         opacity: 1,
-         y: -20,
-         ease: Power3.easeOut
-       }
-     )
-  }, [])
-
 
   let Links = [
     { class: 'link', name: 'HOME', href: '/'},
@@ -59,7 +43,7 @@ export default function Navbar() {
             </div>
         </button>
 
-       <ul className='hidden xl:flex items-center space-x-10 font-bold text-xl' ref={el => {animation = el}}>
+       <ul className='hidden xl:flex items-center space-x-10 font-bold text-xl' data-aos="fade-up" data-aos-duration="3000">
 
           {Links.map((link) => (
             <Link href={link.href} key={link.class}>{link.name}</Link>
