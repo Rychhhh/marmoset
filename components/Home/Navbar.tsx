@@ -33,7 +33,6 @@ export default function Navbar() {
                 {Links.map((link) => (
                   <div key={link.name} className='link-active'>
                         <Link href={link.href} key={link.class}>{link.name}</Link>
-                        <a href="">Whitepaper</a>
                   </div>
                   
               
