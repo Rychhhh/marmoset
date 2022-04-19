@@ -34,9 +34,10 @@ export default function Navbar() {
                   <div key={link.name} className='link-active'>
                         <Link href={link.href} key={link.class}>{link.name}</Link>
                   </div>
-                  
-              
                 ))}
+                        <Popup trigger={<div className='cursor-pointer'> Whitepaper</div>} position="bottom center">
+                                <h1 className='p-4 cursor-wait bg-white'>Coming Soon</h1>
+                      </Popup>
                 
               </ul>
             </div>
